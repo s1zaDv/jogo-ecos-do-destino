@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#201c19">
+  <title>1895 — Ecos do Destino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pagina">
+    <header class="cabecalho">
+      <p class="sobretitulo">Uma narrativa interativa · Inglaterra, 1895</p>
+      <h1>1895 <span>— Ecos do Destino</span></h1>
+      <p class="subtitulo">Toda escolha deixa uma marca. Nem toda marca será percebida a tempo.</p>
+    </header>
+
+    <main>
+      <section id="telaInicial" class="painel tela-inicial">
+        <img id="imagemInicial" class="imagem-inicial" src="cenas_1895/cena_01_whitby_1895.jpg" alt="Whitby em 1895, cidade costeira envolta em neblina">
+        <p class="selo">DUAS VIDAS · UM MUNDO · INÚMEROS DESTINOS</p>
+        <h2>Quem viverá esta história?</h2>
+        <p class="texto-intro">
+          Whitby, Yorkshire. Outubro de 1895. O desaparecimento de Edward Whitmore deixou uma família à beira da miséria e uma pergunta sem resposta. Escolha o protagonista. As oportunidades, os obstáculos e algumas relações serão diferentes em cada campanha.
+        </p>
+        <div class="escolhas-iniciais">
+          <button id="btnThomas" class="botao botao-principal">Thomas Edward Whitmore</button>
+          <button id="btnEleanor" class="botao">Eleanor Grace Whitmore</button>
+        </div>
+        <p class="nota">Personagens e acontecimentos centrais são fictícios, em um cenário inspirado na sociedade britânica do fim do século XIX.</p>
+      </section>
+
+      <section id="telaJogo" class="tela-jogo" hidden>
+        <div class="painel painel-status">
+          <div class="status-cabecalho">
+            <div>
+              <p class="rotulo">PROTAGONISTA</p>
+              <p id="nomePainel" class="valor-status">—</p>
+            </div>
+            <div>
+              <p class="rotulo">DATA</p>
+              <p id="dataPainel" class="valor-status">—</p>
+            </div>
+            <div>
+              <p class="rotulo">IDADE</p>
+              <p id="idadePainel" class="valor-status">12 anos</p>
+            </div>
+            <div>
+              <p class="rotulo">DINHEIRO</p>
+              <p id="dinheiroPainel" class="valor-status">£ 3</p>
+            </div>
+          </div>
+          <div class="status-detalhes">
+            <p><strong>Reputação:</strong> <span id="reputacaoPainel">Neutra</span></p>
+            <p><strong>Relações:</strong> <span id="relacoesPainel">Margaret: cautelosa</span></p>
+          </div>
+        </div>
+
+        <article class="painel painel-historia">
+          <p id="marcadorCapitulo" class="marcador-capitulo">CAPÍTULO I</p>
+          <h2 id="tituloCena">A carta que ficou</h2>
+          <img id="imagemCena" class="imagem-cena" src="" alt="Ilustração da cena atual" hidden>
+          <p id="textoCena" class="texto-cena"></p>
+
+          <div id="campoNomeArea" class="campo-nome" hidden>
+            <label for="campoNome">Nome pelo qual será conhecido(a)</label>
+            <input id="campoNome" type="text" maxlength="30" autocomplete="off">
+            <p class="ajuda-input">O sobrenome Whitmore permanecerá ligado à sua família.</p>
+          </div>
+
+          <div id="opcoes" class="opcoes"></div>
+        </article>
+
+        <details class="painel painel-memoria">
+          <summary>Memórias desta campanha</summary>
+          <p id="memoriaPainel">Suas decisões importantes aparecerão aqui.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p>1895 — Ecos do Destino · Uma história sobre escolhas, consequências e memória.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
